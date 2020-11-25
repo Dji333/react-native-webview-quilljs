@@ -54,6 +54,7 @@ class WebViewQuillJSView extends React.Component<Props> {
             ref={component => {
               setWebViewRef(component);
             }}
+            injectedJavaScript={`document.body.style.overflow = "hidden"`}
             javaScriptEnabled={true}
             onLoadEnd={onLoadEnd}
             onLoadStart={onLoadStart}
